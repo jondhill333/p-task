@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { Property, propertySchema } from './property.schema';
 import { MongooseModule } from '@nestjs/mongoose';
-import { PropertyController } from './property.controller';
-import { PropertyService } from './property.service';
+import { PropertiesController } from './properties.controller';
+import { PropertiesService } from './properties.service';
 
 @Module({
   imports: [
@@ -10,7 +10,7 @@ import { PropertyService } from './property.service';
       { name: Property.name, schema: propertySchema },
     ]),
   ],
-  controllers: [PropertyController],
-  providers: [PropertyService],
+  controllers: [PropertiesController],
+  providers: [PropertiesService],
 })
 export class PropertyModule {}
