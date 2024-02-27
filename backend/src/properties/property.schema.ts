@@ -1,8 +1,8 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { HydratedDocument } from 'mongoose';
 import { v4 as uuid } from 'uuid';
 
-export type PropertyDocument = Property & Document;
+export type PropertyDocument = HydratedDocument<Property>;
 
 @Schema()
 export class Property {
