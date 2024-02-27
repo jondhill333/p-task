@@ -1,9 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { Property, PropertyDocument } from './property.schema';
+import { Property } from './property.schema';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { InjectConnection } from '@nestjs/mongoose';
-import { Connection } from 'mongoose';
 
 @Injectable()
 export class PropertiesService {
