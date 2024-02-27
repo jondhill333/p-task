@@ -51,4 +51,22 @@ describe('Properties Service', () => {
       expect(property).toEqual(propertyStub());
     });
   });
+
+  describe('Get properties', () => {
+    let properties: Property[];
+    let findSpy: jest.SpyInstance;
+
+    beforeEach(async () => {
+      findSpy = jest.spyOn(PropertyModel.prototype, 'find');
+      properties = await propertiesService.getProperties();
+    });
+
+    test('it should call the propertyModel', () => {
+      expect(findSpy).toHaveBeenCalled();
+    });
+
+    test('it should return the properties', () => {
+      expect(properties).toEqual([propertyStub()]);
+    });
+  });
 });

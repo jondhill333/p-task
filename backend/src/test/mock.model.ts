@@ -10,4 +10,10 @@ export abstract class MockModel<T> {
   async save(): Promise<T> {
     return this.propertyStub;
   }
+
+  async find(): Promise<{ exec: () => T[] }> {
+    return {
+      exec: () => [this.propertyStub],
+    };
+  }
 }
