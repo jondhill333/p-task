@@ -13,8 +13,4 @@ export class PropertiesService {
     const newProperty = new this.propertyModel(createPropertyDto);
     return newProperty.save();
   }
-
-  getProperties(): Promise<Property[]> {
-    return this.propertyModel.find().exec();
-  }
 }
