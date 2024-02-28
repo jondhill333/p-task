@@ -3,11 +3,9 @@ import { Property, propertySchema } from './property.schema';
 import { MongooseModule, getModelToken } from '@nestjs/mongoose';
 import { PropertiesController } from './properties.controller';
 import { PropertiesService } from './properties.service';
-// import { PropertyModel } from 'src/test/property.model';
 
 @Module({
   imports: [
-    // PropertyModel,
     MongooseModule.forFeature([
       { name: Property.name, schema: propertySchema },
     ]),

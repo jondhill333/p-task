@@ -36,7 +36,7 @@ describe('Properties Controller', () => {
   });
 
   describe('create property', () => {
-    let property: Property;
+    let property;
     let createPropertyDto: CreatePropertyDto;
     let createSpy: jest.SpyInstance;
 
