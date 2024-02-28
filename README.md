@@ -4,9 +4,11 @@ With a reasonably small time frame as expectation I need to balance up where I c
 
 State Management - The front end handles state locally in the relative page as it is only used for the holding of the data before either submission into the backend (AddProperties) or render (ViewProperties), I felt no great complexity of state management was required for this task.
 
-Testing Strategy - As unit testing comes with some time overheads with regards to set up, I have implemented the basics here without much in depth unit testing
+Testing Strategy - As unit testing comes with some time overheads with regards to set up, I have implemented the basics here - an immediate extension to this task would be to flesh out the tests to increase the coverage
 
 CSS preprocessor - I am familiar with Material UI, hence my reason to utilise it for the the front end
+
+Compromises - As I wanted to stick as closely to the given time frame, I have had to economise on time in a few areas. Two main areas to note with regards to this are the Front end UI, particularly the View Component section needs a good spruce up, and adding more tests to increase the coverage. 
 
 # Run the applications :rocket:
 
